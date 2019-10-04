@@ -2,8 +2,17 @@
 # Game and Simulation II
 
 ## Assignment
-*A GameManager class/object that will keep track of your score. This GameManager should use the singleton pattern discussed in class.
 
-*At least 3 different levels - Each of these should include several platforms that the player can jump across. Each level needs to include a goal object; when the player touches the goal, they should start the next level.
+1) A UI for your game using Unity's UI elements. This must include:
 
-*Each level should include at least 5 pickups - let's call them coins - that, when touched, disappear and add to the player's score. Use Debug.Log to show the player's score everytime they collect one.
+A title screen (make a new scene, with a canvas and text that says "MY AWESOME GAME"), with options for choosing a level (you can use buttons here).
+A health bar for your player that decreases with the player's health (this should include a "bar" image as well as a numerical indicator). We'll add enemies next week, for now you can decrease health as the result of a button press for testing.
+2) Animations for your player character using Mecanim. This needs to have:
+
+States and animations for Idle, Walking/Running, and Falling (at the very least)
+State transitions that make sense (walking changing to idle when not moving, for instance)
+CHALLENGE PROBLEMS (optional):
+
+Include an animation state for when the player jumps - this should transition smoothly to the falling animation
+Add a "sprint" feature - when you hold down a button, move speed increases - and while sprinting, decrease a "stamina" bar
+Add a double jump - and make sure it animates properly

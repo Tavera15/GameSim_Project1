@@ -21,7 +21,7 @@ public class LevelKeyGoal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (GameManager.instance.score % 5 == 0)
+        if (GameManager.score % 5 == 0)
         {
             Destroy(gameObject);
             SceneManager.LoadScene(levelIndex);
