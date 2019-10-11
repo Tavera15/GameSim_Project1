@@ -31,7 +31,6 @@ public class PlayerMovementComp : MonoBehaviour
         bool isGrounded = Physics.Raycast(transform.position, Vector3.down, (transform.localScale.y / 2) + 0.01f);
         //Debug.DrawRay(transform.position,Vector3.down * ((transform.localScale.y / 2) + 0.01f), Color.red);
 
-
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);

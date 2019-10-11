@@ -24,7 +24,7 @@ public class LevelKeyGoal : MonoBehaviour
         if (GameManager.score % 5 == 0)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene(levelIndex);
+            GameManager.LoadLevel(levelIndex);
         }
     }
 }

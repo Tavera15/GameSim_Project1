@@ -47,14 +47,11 @@ public class UI : MonoBehaviour
 
     public void receiveDamage()
     {
-        if (GameManager.health - 10 < 0)
-            return;
-
-        GameManager.health -= 10;
+        GameManager.instance.PlayerTakeDamage(10);
     }
 
     public void LoadLevel(int levelIndex)
     {
-        SceneManager.LoadScene(levelIndex);
+        GameManager.LoadLevel(levelIndex);
     }
 }
